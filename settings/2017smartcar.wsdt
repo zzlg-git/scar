@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>2017smartcar/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>315</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>24</ColumnWidth0><ColumnWidth1>1155</ColumnWidth1><ColumnWidth2>308</ColumnWidth2><ColumnWidth3>77</ColumnWidth3></Build>
+    <TerminalIO/><Find-in-Files><ColumnWidth0>563</ColumnWidth0><ColumnWidth1>93</ColumnWidth1><ColumnWidth2>844</ColumnWidth2><ColumnWidth3>375</ColumnWidth3></Find-in-Files><Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1307</ColumnWidth1></Debug-Log><Find-All-References><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-References><Find-All-Declarations><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-Declarations></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-30673-23907</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>2017smartcar</ExpandedNode><ExpandedNode>2017smartcar/common</ExpandedNode><ExpandedNode>2017smartcar/cpu</ExpandedNode><ExpandedNode>2017smartcar/drivers</ExpandedNode><ExpandedNode>2017smartcar/schedule</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28582-23946</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-20019-27406</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-23835-520</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-27373-23832</Identity><TabName>References</TabName><Factory>Find-All-References</Factory><Session/></Tab><Tab><Identity>TabID-3187-25314</Identity><TabName>Declarations</TabName><Factory>Find-All-Declarations</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\cpu\core.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1368</SelStart2><SelEnd2>1368</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\spisoft.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>541</SelStart2><SelEnd2>541</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\flash.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\wdog.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\wdog.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\timer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>9</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\spisoft.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>20</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\spi.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>17</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\cpu\clkinit.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>20</YPos2><SelStart2>835</SelStart2><SelEnd2>835</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\adc.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\cpu\vectors.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>279</YPos2><SelStart2>5344</SelStart2><SelEnd2>5344</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\BMX055.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>186</SelStart2><SelEnd2>186</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\common\systeminit.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>6</YPos2><SelStart2>500</SelStart2><SelEnd2>500</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\Attitude_Calculation.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>22</YPos2><SelStart2>1036</SelStart2><SelEnd2>1036</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\Attitude_Calculation.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>34</YPos2><SelStart2>1292</SelStart2><SelEnd2>1292</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\iicsoft.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>521</SelStart2><SelEnd2>521</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\sensoroperation.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>370</SelStart2><SelEnd2>370</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\iicsoft.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1084</SelStart2><SelEnd2>1084</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\uart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>3682</SelStart2><SelEnd2>3682</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\uart.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>2</YPos2><SelStart2>298</SelStart2><SelEnd2>298</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\schedule\schedule.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>22</YPos2><SelStart2>998</SelStart2><SelEnd2>998</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\common\common.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>42</YPos2><SelStart2>1268</SelStart2><SelEnd2>1272</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\math.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>327</SelStart2><SelEnd2>327</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\common\systeminit.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>254</SelStart2><SelEnd2>265</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\sensoroperation.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>28</YPos2><SelStart2>882</SelStart2><SelEnd2>882</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\MPU9250_api.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>476</SelStart2><SelEnd2>476</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\MPU9250.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>423</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\pwm.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1357</SelStart2><SelEnd2>1357</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\MPU9250.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>290</YPos2><SelStart2>18108</SelStart2><SelEnd2>18108</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\pwm.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>342</SelStart2><SelEnd2>342</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\mcg.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\gpio.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>3127</SelStart2><SelEnd2>3127</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\gpio.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>6</YPos2><SelStart2>2057</SelStart2><SelEnd2>2057</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\interrupt.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>68</YPos2><SelStart2>2391</SelStart2><SelEnd2>2391</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\drivers\BMX055.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>2436</SelStart2><SelEnd2>2436</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>103</SelStart2><SelEnd2>103</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\source\schedule\schedule.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>215</YPos2><SelStart2>6736</SelStart2><SelEnd2>6736</SelEnd2></Tab><ActiveTab>36</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01EE1BC8><key>iaridepm.enu1</key></Toolbar-01EE1BC8></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>725</Bottom><Right>406</Right><x>-2</x><y>-2</y><xscreen>434</xscreen><yscreen>240</yscreen><sizeHorzCX>226042</sizeHorzCX><sizeHorzCY>240722</sizeHorzCY><sizeVertCX>212500</sizeVertCX><sizeVertCY>729188</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>227</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>229</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>229689</sizeHorzCY><sizeVertCX>226042</sizeVertCX><sizeVertCY>240722</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

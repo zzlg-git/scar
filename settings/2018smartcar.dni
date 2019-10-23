@@ -1,0 +1,147 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[PlDriver]
+MemConfigValue=D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CONFIG\debugger\Freescale\MK60DN512Zxxx10.ddf
+FirstRun=0
+[Jet]
+DisableInterrupts=0
+MultiCoreRunAll=0
+JetConnSerialNo=1387
+JetConnFoundProbes=
+OnlineReset=Software
+PrevWtdReset=Software
+[ArmDriver]
+EnableCache=1
+[DebugChecksum]
+Checksum=1067824103
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[SWOManager]
+SamplingDivider=8192
+OverrideClock=0
+CpuClock=6619250
+SwoClock=1278105413
+DataLogMode=0
+ItmPortsEnabled=63
+ItmTermIOPorts=1
+ItmLogPorts=0
+ItmLogFile=$PROJ_DIR$\ITM.log
+PowerForcePC=1
+PowerConnectPC=1
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[CodeCoverage]
+Enabled=_ 0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[SWOTraceWindow]
+ForcedPcSampling=0
+ForcedInterruptLogs=0
+ForcedItmLogs=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[CallStackLog]
+Enabled=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=0
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "C:\Users\ljh\Desktop\直立校内赛\source\cpu\start.c" "C:\Users\hasee\Desktop\scar\f1\source\cpu\start.c"
+A1=_ "C:\Users\兔兔\Desktop\2018智能车校内赛直立组例程_DAP_V2.0\source\main.c" "C:\Users\兔兔\Desktop\B10\source\main.c"
+A2=_ "C:\Users\兔兔\Desktop\B10\source\cpu\start.c" ""
+A3=_ "E:\SmartCarTeam(绳浩兵)\DAP例程\2018智能车校内赛直立组例程1.0\source\cpu\start.c" ""
+A4=_ "E:\SmartCarTeam(绳浩兵)\DAP例程\2018智能车校内赛直立组例程1.0\source\drivers\wdog.c" ""
+Count=5
+SuppressDialog=1

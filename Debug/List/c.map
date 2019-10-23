@@ -1,0 +1,656 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.2.7424/W32 for ARM                 22/Oct/2019  16:55:06
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  C:\Users\hasee\Desktop\scar\f1\Debug\Exe\c.out
+#    Map file     =  C:\Users\hasee\Desktop\scar\f1\Debug\List\c.map
+#    Command line =  
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\3IN1.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\adc.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\Attitude_Calculation.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\BMX055.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\clkinit.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\core.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\crt0.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\flash.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\gpio.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\iicsoft.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\interrupt.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\keyboard_oled.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\main.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\mathadd.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\mcg.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\MPU9250.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\pulse_counter.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\pwm.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\sccb.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\schedule.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\sensoroperation.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\spi.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\spisoft.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\start.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\systeminit.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\timer.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\uart.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\vectors.o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Obj\wdog.o -o
+#        C:\Users\hasee\Desktop\scar\f1\Debug\Exe\c.out --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        C:\Users\hasee\Desktop\scar\f1\Debug\List\c.map --config
+#        C:\Users\hasee\Desktop\scar\f1\source\link\Pflash.icf --semihosting
+#        --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00000000 { ro section .intvec };
+"A2":  place at 0x00000410 { ro section .noinit };
+"P1":  place in [from 0x00000000 to 0x0007ffff] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0410 to 0x1fffffff] |
+                [from 0x20000000 to 0x2000ffff] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x00000000   0x410  vectors.o [1]
+                              - 0x00000410   0x410
+
+"P1", part 1 of 2:                             0x0
+  .rodata              const    0x00000410     0x0  zero_init3.o [5]
+
+"A2":                                         0x3c
+  .noinit              ro code  0x00000410    0x3c  crt0.o [1]
+                              - 0x0000044c    0x3c
+
+"P1", part 2 of 2:                          0x56f4
+  .text                ro code  0x0000044c  0x1020  schedule.o [1]
+  .text                ro code  0x0000146c   0x31c  sensoroperation.o [1]
+  .text                ro code  0x00001788   0x258  interrupt.o [1]
+  .text                ro code  0x000019e0   0x1e4  uart.o [1]
+  .text                ro code  0x00001bc4   0x100  pulse_counter.o [1]
+  .text                ro code  0x00001cc4    0x32  I32ToFlt.o [4]
+  .text                ro code  0x00001cf6    0x22  zero_init3.o [5]
+  .text                ro code  0x00001d18    0x84  FltAdd.o [4]
+  .text                ro code  0x00001d9c    0xe6  FltSub.o [4]
+  .text                ro code  0x00001e84    0xd8  FltMul.o [4]
+  .text                ro code  0x00001f5c    0xfc  FltDiv.o [4]
+  .text                ro code  0x00002058    0x24  FltCmpGe.o [4]
+  .text                ro code  0x0000207c    0x24  FltCmpLe.o [4]
+  .text                ro code  0x000020a0    0x44  FltToS32.o [4]
+  .text                ro code  0x000020e4   0xcc8  Attitude_Calculation.o [1]
+  .text                ro code  0x00002dac    0x4e  FltToDbl.o [4]
+  .text                ro code  0x00002dfc   0x246  DblDiv.o [4]
+  .text                ro code  0x00003044   0x1a2  DblMul.o [4]
+  .text                ro code  0x000031e8    0x90  DblToFlt.o [4]
+  .text                ro code  0x00003278   0x3a0  BMX055.o [1]
+  .text                ro code  0x00003618   0x132  I64DivMod.o [5]
+  .text                ro code  0x0000374c    0x72  sqrtf.o [4]
+  .text                ro code  0x000037be    0x2a  xfdtest.o [4]
+  .text                ro code  0x000037e8    0xca  atan2f.o [4]
+  .text                ro code  0x000038b4    0xb0  asinf.o [4]
+  .text                ro code  0x00003964     0x6  cosf.o [4]
+  .text                ro code  0x0000396a     0x6  sinf.o [4]
+  .text                ro code  0x00003970    0xa8  acosf.o [4]
+  .text                ro code  0x00003a18    0x1c  FltCmpEq.o [4]
+  .text                ro code  0x00003a34     0xc  memcpy.o [3]
+  .text                ro code  0x00003a40    0x2e  DblCmpLe.o [4]
+  .text                ro code  0x00003a70    0xe8  DblAdd.o [4]
+  .text                ro code  0x00003b58   0x4a4  iicsoft.o [1]
+  .text                ro code  0x00003ffc     0x2  I64DivZer.o [5]
+  .text                ro code  0x00004000     0xc  iarEdom.o [5]
+  .text                ro code  0x0000400c    0xf4  xfatan.o [4]
+  .text                ro code  0x00004100     0xc  errno.o [3]
+  .text                ro code  0x0000410c   0x23c  xfsin.o [4]
+  .text                ro code  0x00004348    0x76  ABImemcpy_unaligned.o [5]
+  .text                ro code  0x000043c0   0x16c  DblSub.o [4]
+  .text                ro code  0x0000452c     0x2  xtls.o [3]
+  .text                ro code  0x00004530    0xec  xfquad.o [4]
+  .text                ro code  0x0000461c    0x50  xfdint.o [4]
+  .text                ro code  0x0000466c    0xce  fmodf.o [4]
+  .text                ro code  0x0000473c   0x578  sccb.o [1]
+  .rodata              const    0x00004cb4   0x508  sccb.o [1]
+  .text                ro code  0x000051bc   0x208  gpio.o [1]
+  Veneer               ro code  0x000053c4     0x8  - Linker created -
+  .text                ro code  0x000053cc   0x1f0  mcg.o [1]
+  .text                ro code  0x000055bc   0x12c  systeminit.o [1]
+  .text                ro code  0x000056e8    0x94  timer.o [1]
+  .text                ro code  0x0000577c   0x108  pwm.o [1]
+  .text                ro code  0x00005884    0x24  adc.o [1]
+  .text                ro code  0x000058a8    0xb0  start.o [1]
+  .text                ro code  0x00005958    0x38  wdog.o [1]
+  .text                ro code  0x00005990    0x70  clkinit.o [1]
+  .text                ro code  0x00005a00    0x14  main.o [1]
+  .text                ro code  0x00005a14     0xc  core.o [1]
+  CodeRelocate                  0x00005a20    0x4c  <Block>
+    Initializer bytes  ro data  0x00005a20    0x4c  <for CodeRelocateRam-1>
+  .text                ro code  0x00005a6c    0x28  data_init.o [5]
+  .text                ro code  0x00005a94    0x24  vectors.o [1]
+  .iar.init_table      const    0x00005ab8    0x10  - Linker created -
+  .text                ro code  0x00005ac8    0x1a  cmain.o [5]
+  .text                ro code  0x00005ae2     0x4  low_level_init.o [3]
+  .text                ro code  0x00005ae6     0x4  exit.o [3]
+  .text                ro code  0x00005aec     0xa  cexit.o [5]
+  .text                ro code  0x00005af8    0x14  exit.o [6]
+  .text                ro code  0x00005b0c     0xc  cstartup_M.o [5]
+  .data_init                    0x00005b18     0xc  <Block>
+    Initializer bytes  ro data  0x00005b18     0xc  <for .data-1>
+  .rodata              const    0x00005b24     0x8  schedule.o [1]
+  .rodata              const    0x00005b2c     0x8  schedule.o [1]
+  .rodata              const    0x00005b34     0x8  schedule.o [1]
+  Initializer bytes    ro data  0x00005b3c     0x4  <for P2 s0>
+                              - 0x00005b40  0x56f4
+
+"P2":                                       0x2c80
+  CodeRelocateRam               0x1fff0410    0x4c  <Block>
+    CodeRelocateRam-1           0x1fff0410    0x4c  <Init block>
+      .textrw          inited   0x1fff0410    0x4c  mcg.o [1]
+  .data                         0x1fff045c     0xc  <Block>
+    .data-1                     0x1fff045c     0xa  <Init block>
+      .data            inited   0x1fff045c     0x4  schedule.o [1]
+      .data            inited   0x1fff0460     0x4  schedule.o [1]
+      .data            inited   0x1fff0464     0x2  schedule.o [1]
+  .bss                          0x1fff0468  0x2c23  <Block>
+    .bss               zero     0x1fff0468     0xc  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0474     0xc  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0480    0x1c  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff049c    0x10  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff04ac     0xc  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff04b8    0x10  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff04c8     0xc  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff04d4    0x10  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff04e4     0xc  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff04f0    0x10  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0500    0x10  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0510     0xc  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff051c    0x10  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff052c     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0530     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0534     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0538     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff053c     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0540     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0544     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0548     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff054c     0x4  Attitude_Calculation.o [1]
+    .bss               zero     0x1fff0550     0x4  clkinit.o [1]
+    .bss               zero     0x1fff0554     0x4  clkinit.o [1]
+    .bss               zero     0x1fff0558     0x4  clkinit.o [1]
+    .bss               zero     0x1fff055c     0x4  clkinit.o [1]
+    .bss               zero     0x1fff0560    0x24  schedule.o [1]
+    .bss               zero     0x1fff0584     0xc  schedule.o [1]
+    .bss               zero     0x1fff0590     0x4  schedule.o [1]
+    .bss               zero     0x1fff0594     0x4  schedule.o [1]
+    .bss               zero     0x1fff0598     0x4  schedule.o [1]
+    .bss               zero     0x1fff059c     0x4  schedule.o [1]
+    .bss               zero     0x1fff05a0     0x4  schedule.o [1]
+    .bss               zero     0x1fff05a4     0x4  schedule.o [1]
+    .bss               zero     0x1fff05a8     0x4  schedule.o [1]
+    .bss               zero     0x1fff05ac     0x4  schedule.o [1]
+    .bss               zero     0x1fff05b0     0x4  schedule.o [1]
+    .bss               zero     0x1fff05b4     0x4  schedule.o [1]
+    .bss               zero     0x1fff05b8     0x4  schedule.o [1]
+    .bss               zero     0x1fff05bc   0x140  schedule.o [1]
+    .bss               zero     0x1fff06fc   0x140  schedule.o [1]
+    .bss               zero     0x1fff083c   0x140  schedule.o [1]
+    .bss               zero     0x1fff097c  0x25f8  schedule.o [1]
+    .bss               zero     0x1fff2f74     0x4  schedule.o [1]
+    .bss               zero     0x1fff2f78     0x4  schedule.o [1]
+    .bss               zero     0x1fff2f7c     0x4  schedule.o [1]
+    .bss               zero     0x1fff2f80     0x4  schedule.o [1]
+    .bss               zero     0x1fff2f84    0x14  schedule.o [1]
+    .bss               zero     0x1fff2f98    0x14  schedule.o [1]
+    .bss               zero     0x1fff2fac     0xc  schedule.o [1]
+    .bss               zero     0x1fff2fb8     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fbc     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fc0     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fc4     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fc8     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fcc     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fd0     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fd4     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fd8     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fdc     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fe0     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fe4     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fe8     0x4  schedule.o [1]
+    .bss               zero     0x1fff2fec     0x4  schedule.o [1]
+    .bss               zero     0x1fff2ff0     0x4  schedule.o [1]
+    .bss               zero     0x1fff2ff4     0x4  schedule.o [1]
+    .bss               zero     0x1fff2ff8     0x4  schedule.o [1]
+    .bss               zero     0x1fff2ffc     0xc  schedule.o [1]
+    .bss               zero     0x1fff3008    0x20  schedule.o [1]
+    .bss               zero     0x1fff3028    0x1c  sensoroperation.o [1]
+    .bss               zero     0x1fff3044     0xc  sensoroperation.o [1]
+    .bss               zero     0x1fff3050     0xc  sensoroperation.o [1]
+    .bss               zero     0x1fff305c     0x4  sensoroperation.o [1]
+    .bss               zero     0x1fff3060     0x4  sensoroperation.o [1]
+    .bss               zero     0x1fff3064     0x4  sensoroperation.o [1]
+    .bss               zero     0x1fff3068     0x4  sensoroperation.o [1]
+    .bss               zero     0x1fff306c     0x4  vectors.o [1]
+    .bss               zero     0x1fff3070     0x4  vectors.o [1]
+    .bss               zero     0x1fff3074     0x2  schedule.o [1]
+    .bss               zero     0x1fff3076     0x2  schedule.o [1]
+    .bss               zero     0x1fff3078     0x2  schedule.o [1]
+    .bss               zero     0x1fff307a     0x2  schedule.o [1]
+    .bss               zero     0x1fff307c     0x2  schedule.o [1]
+    .bss               zero     0x1fff307e     0x2  schedule.o [1]
+    .bss               zero     0x1fff3080     0x2  schedule.o [1]
+    .bss               zero     0x1fff3082     0x2  schedule.o [1]
+    .bss               zero     0x1fff3084     0x1  schedule.o [1]
+    .bss               zero     0x1fff3085     0x1  schedule.o [1]
+    .bss               zero     0x1fff3086     0x1  schedule.o [1]
+    .bss               zero     0x1fff3087     0x1  schedule.o [1]
+    .bss               zero     0x1fff3088     0x1  schedule.o [1]
+    .bss               zero     0x1fff3089     0x1  schedule.o [1]
+    .bss               zero     0x1fff308a     0x1  sensoroperation.o [1]
+  P2 s0                         0x1fff308c     0x4  <Init block>
+    __DLIB_PERTHREAD   inited   0x1fff308c     0x4  errno.o [3]
+                              - 0x1fff3090  0x2c80
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x2c23:
+          0x1fff0468  0x2c23
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  rw code  ro data  rw data
+    ------                  -------  -------  -------  -------
+C:\Users\hasee\Desktop\scar\f1\Debug\Obj: [1]
+    Attitude_Calculation.o    3 272                        232
+    BMX055.o                    928
+    adc.o                        36
+    clkinit.o                   112                         16
+    core.o                       12
+    crt0.o                       60
+    gpio.o                      520
+    iicsoft.o                 1 188
+    interrupt.o                 600
+    main.o                       20
+    mcg.o                       496       76       76
+    pulse_counter.o             256
+    pwm.o                       264
+    sccb.o                    1 400             1 288
+    schedule.o                4 128                34   10 984
+    sensoroperation.o           796                         69
+    start.o                     176
+    systeminit.o                300
+    timer.o                     148
+    uart.o                      484
+    vectors.o                    36             1 040        8
+    wdog.o                       56
+    ----------------------------------------------------------
+    Total:                   15 288       76    2 438   11 309
+
+command line: [2]
+    ----------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    errno.o                      12                 4        4
+    exit.o                        4
+    low_level_init.o              4
+    memcpy.o                     12
+    xtls.o                        2
+    ----------------------------------------------------------
+    Total:                       34                 4        4
+
+m7M_tl.a: [4]
+    DblAdd.o                    232
+    DblCmpLe.o                   46
+    DblDiv.o                    582
+    DblMul.o                    418
+    DblSub.o                    364
+    DblToFlt.o                  144
+    FltAdd.o                    132
+    FltCmpEq.o                   28
+    FltCmpGe.o                   36
+    FltCmpLe.o                   36
+    FltDiv.o                    252
+    FltMul.o                    216
+    FltSub.o                    230
+    FltToDbl.o                   78
+    FltToS32.o                   68
+    I32ToFlt.o                   50
+    acosf.o                     168
+    asinf.o                     176
+    atan2f.o                    202
+    cosf.o                        6
+    fmodf.o                     206
+    sinf.o                        6
+    sqrtf.o                     114
+    xfatan.o                    244
+    xfdint.o                     80
+    xfdtest.o                    42
+    xfquad.o                    236
+    xfsin.o                     572
+    ----------------------------------------------------------
+    Total:                    4 964
+
+rt7M_tl.a: [5]
+    ABImemcpy_unaligned.o       118
+    I64DivMod.o                 306
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    iarEdom.o                    12
+    zero_init3.o                 34
+    ----------------------------------------------------------
+    Total:                      560
+
+shb_l.a: [6]
+    exit.o                       20
+    ----------------------------------------------------------
+    Total:                       20
+
+    Gaps                         26
+    Linker created                8                18
+--------------------------------------------------------------
+    Grand Total:             20 900       76    2 460   11 313
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.bss$$Base              0x1fff0468           --   Gb  - Linker created -
+.bss$$Limit             0x1fff308b           --   Gb  - Linker created -
+.data$$Base             0x1fff045c           --   Gb  - Linker created -
+.data$$Limit            0x1fff0468           --   Gb  - Linker created -
+.data_init$$Base        0x00005b18           --   Gb  - Linker created -
+.data_init$$Limit       0x00005b24           --   Gb  - Linker created -
+?main                   0x00005ac9          Code  Gb  cmain.o [5]
+ADC_Init                0x00005885    0x1a  Code  Gb  adc.o [1]
+Acc                     0x1fff0468     0xc  Data  Gb  Attitude_Calculation.o [1]
+Attitude_UpdateAcc      0x00002ae5    0xd6  Code  Gb  Attitude_Calculation.o [1]
+Attitude_UpdateGyro     0x00002bbb   0x168  Code  Gb  Attitude_Calculation.o [1]
+AxisAngle               0x1fff04b8    0x10  Data  Gb  Attitude_Calculation.o [1]
+BMX055_DataRead         0x00003501   0x118  Code  Gb  BMX055.o [1]
+BMX055_Sample           0x00001607   0x120  Code  Gb  sensoroperation.o [1]
+BMX055_data             0x1fff0560    0x24  Data  Gb  schedule.o [1]
+BMX055_init             0x00003279   0x27c  Code  Gb  BMX055.o [1]
+CarSta                  0x1fff0480    0x1c  Data  Gb  Attitude_Calculation.o [1]
+Car_Run                 0x0000108d   0x144  Code  Gb  schedule.o [1]
+Car_Stand               0x00001005    0x42  Code  Gb  schedule.o [1]
+Car_Turn                0x000011d9    0x3e  Code  Gb  schedule.o [1]
+CodeRelocate$$Base      0x00005a20           --   Gb  - Linker created -
+CodeRelocate$$Limit     0x00005a6c           --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff0410           --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff045c           --   Gb  - Linker created -
+ErrAxisAngle            0x1fff051c    0x10  Data  Gb  Attitude_Calculation.o [1]
+ErrEulerAngle           0x1fff0510     0xc  Data  Gb  Attitude_Calculation.o [1]
+ErrQuaternion           0x1fff0500    0x10  Data  Gb  Attitude_Calculation.o [1]
+EulerAngle              0x1fff04ac     0xc  Data  Gb  Attitude_Calculation.o [1]
+EulerAngleRate          0x1fff04c8     0xc  Data  Gb  Attitude_Calculation.o [1]
+Get_Counter_Value       0x00001c57    0x1e  Code  Gb  pulse_counter.o [1]
+Gyro                    0x1fff0474     0xc  Data  Gb  Attitude_Calculation.o [1]
+GyroOffset              0x1fff0584     0xc  Data  Gb  schedule.o [1]
+Gyro_Init               0x000014a5    0x66  Code  Gb  sensoroperation.o [1]
+IIC_DELAY               0x00003b59    0x1c  Code  Gb  iicsoft.o [1]
+IIC_Read_Buff           0x00003f05    0x90  Code  Gb  iicsoft.o [1]
+IIC_Read_Reg            0x00003ea1    0x64  Code  Gb  iicsoft.o [1]
+IIC_Write_Reg           0x00003e51    0x50  Code  Gb  iicsoft.o [1]
+IIC_ack                 0x00003ce3    0x4c  Code  Gb  iicsoft.o [1]
+IIC_init                0x00003f95    0x4e  Code  Gb  iicsoft.o [1]
+IIC_noack               0x00003d2f    0x4c  Code  Gb  iicsoft.o [1]
+IIC_readbyte            0x00003dd3    0x7e  Code  Gb  iicsoft.o [1]
+IIC_sendbyte            0x00003d7b    0x58  Code  Gb  iicsoft.o [1]
+IIC_start               0x00003b75    0x6c  Code  Gb  iicsoft.o [1]
+IIC_stop                0x00003be1    0x66  Code  Gb  iicsoft.o [1]
+IIC_waitack             0x00003c47    0x9c  Code  Gb  iicsoft.o [1]
+MT9V022_reg             0x00004cb4   0x508  Data  Gb  sccb.o [1]
+MeaAxisAngle            0x1fff04f0    0x10  Data  Gb  Attitude_Calculation.o [1]
+MeaEulerAngle           0x1fff04e4     0xc  Data  Gb  Attitude_Calculation.o [1]
+MeaQuaternion           0x1fff04d4    0x10  Data  Gb  Attitude_Calculation.o [1]
+Middle_Angle            0x1fff05b8     0x4  Data  Gb  schedule.o [1]
+Motor_Set               0x00001245    0xc6  Code  Gb  schedule.o [1]
+Pulse_Counter_Init      0x00001bc5    0x92  Code  Gb  pulse_counter.o [1]
+Pwm_Init                0x0000577d     0x8  Code  Gb  pwm.o [1]
+Pwm_Motor_Init          0x00005785    0xb4  Code  Gb  pwm.o [1]
+Quaternion              0x1fff049c    0x10  Data  Gb  Attitude_Calculation.o [1]
+QuaternionFromAcc       0x000026b9   0x398  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_FromAxisAngle
+                        0x000024d3    0x5e  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_FromEulerAngle
+                        0x00002391   0x114  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_Invert       0x0000217b    0x1e  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_Multi        0x00002199    0xfe  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_Normalize    0x000020e5    0x96  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_ToAxisAngle  0x000024a5    0x2e  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_ToEulerAngle
+                        0x00002297    0xfa  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_UpdateFromGyro
+                        0x00002531   0x188  Code  Gb  Attitude_Calculation.o [1]
+Quaternion_init         0x00002a51    0x94  Code  Gb  Attitude_Calculation.o [1]
+Region$$Table$$Base     0x00005ab8           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00005ac8           --   Gb  - Linker created -
+Running                 0x000004bd     0x8  Code  Gb  schedule.o [1]
+Running_Init            0x00000fb5    0x50  Code  Gb  schedule.o [1]
+SCCBwriteByte           0x00004a1f   0x1aa  Code  Gb  sccb.o [1]
+STATUS_0                0x1fff05a8     0x4  Data  Gb  schedule.o [1]
+STATUS_1                0x1fff05ac     0x4  Data  Gb  schedule.o [1]
+STATUS_2                0x1fff05b0     0x4  Data  Gb  schedule.o [1]
+STATUS_3                0x1fff05b4     0x4  Data  Gb  schedule.o [1]
+ScheduleInit            0x0000044d    0x70  Code  Gb  schedule.o [1]
+Search                  0x0000067f   0x87c  Code  Gb  schedule.o [1]
+Sensor_Init             0x0000146d    0x38  Code  Gb  sensoroperation.o [1]
+Sensor_Process          0x0000150b    0xfc  Code  Gb  sensoroperation.o [1]
+Temp                    0x1fff2f80     0x4  Data  Gb  schedule.o [1]
+XD                      0x1fff0534     0x4  Data  Gb  Attitude_Calculation.o [1]
+XE                      0x1fff0530     0x4  Data  Gb  Attitude_Calculation.o [1]
+XN                      0x1fff052c     0x4  Data  Gb  Attitude_Calculation.o [1]
+YD                      0x1fff0540     0x4  Data  Gb  Attitude_Calculation.o [1]
+YE                      0x1fff053c     0x4  Data  Gb  Attitude_Calculation.o [1]
+YN                      0x1fff0538     0x4  Data  Gb  Attitude_Calculation.o [1]
+ZD                      0x1fff054c     0x4  Data  Gb  Attitude_Calculation.o [1]
+ZE                      0x1fff0548     0x4  Data  Gb  Attitude_Calculation.o [1]
+ZN                      0x1fff0544     0x4  Data  Gb  Attitude_Calculation.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8           --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000           --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x00000000           --   Gb  command line/config [2]
+__aeabi_cdcmple         0x00003a41          Code  Gb  DblCmpLe.o [4]
+__aeabi_cfcmpeq         0x00003a19          Code  Gb  FltCmpEq.o [4]
+__aeabi_cfcmple         0x0000207d          Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple        0x00002059          Code  Gb  FltCmpGe.o [4]
+__aeabi_d2f             0x000031e9          Code  Gb  DblToFlt.o [4]
+__aeabi_dadd            0x00003a71          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x00002dfd          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x00003045          Code  Gb  DblMul.o [4]
+__aeabi_errno_addr      0x00004101     0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x00002dad          Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x000020a1          Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x00001d19          Code  Gb  FltAdd.o [4]
+__aeabi_fdiv            0x00001f5d          Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x00001e85          Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x00001d9d          Code  Gb  FltSub.o [4]
+__aeabi_i2f             0x00001cc5          Code  Gb  I32ToFlt.o [4]
+__aeabi_ldiv0           0x00003ffd          Code  Gb  I64DivZer.o [5]
+__aeabi_ldivmod         0x00003619          Code  Gb  I64DivMod.o [5]
+__aeabi_ui2f            0x00001cd9          Code  Gb  I32ToFlt.o [4]
+__aeabi_uldivmod        0x0000365d          Code  Gb  I64DivMod.o [5]
+__as_entries_start      0xffffffff           --   Gb  command line/config [2]
+__as_table_start        0xffffffff           --   Gb  command line/config [2]
+__cmain                 0x00005ac9          Code  Gb  cmain.o [5]
+__exit                  0x00005af9    0x14  Code  Gb  exit.o [6]
+__iar_Errno             0x1fff308c     0x4  Data  Gb  errno.o [3]
+__iar_FAtan             0x0000400d    0xb4  Code  Gb  xfatan.o [4]
+__iar_FDint             0x0000461d    0x50  Code  Gb  xfdint.o [4]
+__iar_FDtest            0x000037bf    0x2a  Code  Gb  xfdtest.o [4]
+__iar_FQuad             0x00004531    0xec  Code  Gb  xfquad.o [4]
+__iar_FSin              0x0000410d   0x23c  Code  Gb  xfsin.o [4]
+__iar_dadd              0x00003a85          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x00005a6d    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x0000452d     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x000043c1          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x000043d3          Code  Gb  DblSub.o [4]
+__iar_edom              0x00004001          Code  Gb  iarEdom.o [5]
+__iar_fadd              0x00001d29          Code  Gb  FltAdd.o [4]
+__iar_fmodf             0x0000466d          Code  Gb  fmodf.o [4]
+__iar_fsub              0x00001dad          Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x00001dbd          Code  Gb  FltSub.o [4]
+__iar_program_start     0x00005b0d          Code  Gb  cstartup_M.o [5]
+__iar_sqrtf             0x0000374d          Code  Gb  sqrtf.o [4]
+__iar_ui2f              0x00001cdd          Code  Gb  I32ToFlt.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x00004349          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x00004369          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x00004369          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x00001cf7    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00005ae3     0x4  Code  Gb  low_level_init.o [3]
+__startup               0x00000411          Code  Gb  crt0.o [1]
+__vector_table          0x00000000   0x410  Data  Gb  vectors.o [1]
+_call_main              0x00005ad5          Code  Gb  cmain.o [5]
+_exit                   0x00005aed          Code  Gb  cexit.o [5]
+_main                   0x00005adf          Code  Gb  cmain.o [5]
+a                       0x000040e0    0x20  Data  Lc  xfatan.o [4]
+acc                     0x1fff3028    0x1c  Data  Gb  sensoroperation.o [1]
+acosf                   0x00003971    0xa8  Code  Gb  acosf.o [4]
+asinf                   0x000038b5    0xb0  Code  Gb  asinf.o [4]
+atan2f                  0x000037e9    0xca  Code  Gb  atan2f.o [4]
+bias                    0x1fff2fc8     0x4  Data  Gb  schedule.o [1]
+bmx055test              0x1fff3068     0x4  Data  Gb  sensoroperation.o [1]
+carcon                  0x1fff3008    0x20  Data  Gb  schedule.o [1]
+carsta                  0x1fff2ffc     0xc  Data  Gb  schedule.o [1]
+clkinit                 0x00005991    0x70  Code  Gb  clkinit.o [1]
+common_startup          0x000058bd    0x74  Code  Gb  start.o [1]
+core_clk_khz            0x1fff0550     0x4  Data  Gb  clkinit.o [1]
+core_clk_mhz            0x1fff0554     0x4  Data  Gb  clkinit.o [1]
+cosf                    0x00003965     0x6  Code  Gb  cosf.o [4]
+default_isr             0x00005a95    0x24  Code  Gb  vectors.o [1]
+default_isr_n           0x1fff3070     0x4  Data  Gb  vectors.o [1]
+disable_irq             0x000018ef    0x90  Code  Gb  interrupt.o [1]
+enable_irq              0x000017ff    0xf0  Code  Gb  interrupt.o [1]
+exit                    0x00005ae7     0x4  Code  Gb  exit.o [3]
+fb_clk_init             0x00005579    0x16  Code  Gb  mcg.o [1]
+fmodf                   0x0000466d          Code  Gb  fmodf.o [4]
+g_CenterNum             0x1fff2f74     0x4  Data  Gb  schedule.o [1]
+g_CenterPosition        0x1fff05bc   0x140  Data  Gb  schedule.o [1]
+g_Cover                 0x1fff2fb8     0x4  Data  Gb  schedule.o [1]
+g_CoverIndex            0x1fff2fac     0xc  Data  Gb  schedule.o [1]
+g_CoverNum              0x1fff3086     0x1  Data  Gb  schedule.o [1]
+g_DirectionControl      0x1fff045c     0x4  Data  Gb  schedule.o [1]
+g_DirectionControlLine  0x1fff2fc4     0x4  Data  Gb  schedule.o [1]
+g_DirectionControlWhole
+                        0x1fff2fc0     0x4  Data  Gb  schedule.o [1]
+g_Display               0x1fff0598     0x4  Data  Gb  schedule.o [1]
+g_End                   0x1fff2f98    0x14  Data  Gb  schedule.o [1]
+g_FormerDirectionControl
+                        0x1fff0460     0x4  Data  Gb  schedule.o [1]
+g_ImageLine             0x1fff0594     0x4  Data  Gb  schedule.o [1]
+g_LeftEdge              0x1fff06fc   0x140  Data  Gb  schedule.o [1]
+g_LeftEdgeNum           0x1fff2f78     0x4  Data  Gb  schedule.o [1]
+g_Line                  0x1fff0590     0x4  Data  Gb  schedule.o [1]
+g_LineToDiv             0x1fff05a0     0x4  Data  Gb  schedule.o [1]
+g_RightEdge             0x1fff083c   0x140  Data  Gb  schedule.o [1]
+g_RightEdgeNum          0x1fff2f7c     0x4  Data  Gb  schedule.o [1]
+g_SEnum                 0x1fff3074     0x2  Data  Gb  schedule.o [1]
+g_SearchFlag            0x1fff3085     0x1  Data  Gb  schedule.o [1]
+g_SendCurve             0x1fff3088     0x1  Data  Gb  schedule.o [1]
+g_SendIndex             0x1fff3076     0x2  Data  Gb  schedule.o [1]
+g_SendPic               0x1fff3087     0x1  Data  Gb  schedule.o [1]
+g_Start                 0x1fff2f84    0x14  Data  Gb  schedule.o [1]
+g_VideoFlag             0x1fff3084     0x1  Data  Gb  schedule.o [1]
+g_countervalue_l        0x1fff307a     0x2  Data  Gb  schedule.o [1]
+g_countervalue_r        0x1fff307c     0x2  Data  Gb  schedule.o [1]
+g_direction_d           0x1fff2ff0     0x4  Data  Gb  schedule.o [1]
+g_direction_p           0x1fff2fec     0x4  Data  Gb  schedule.o [1]
+g_feedback_l            0x1fff2ff4     0x4  Data  Gb  schedule.o [1]
+g_feedback_r            0x1fff2ff8     0x4  Data  Gb  schedule.o [1]
+g_motor_l               0x1fff307e     0x2  Data  Gb  schedule.o [1]
+g_motor_r               0x1fff3080     0x2  Data  Gb  schedule.o [1]
+g_speed_count           0x1fff3089     0x1  Data  Gb  schedule.o [1]
+g_speed_final           0x1fff3082     0x2  Data  Gb  schedule.o [1]
+g_speed_i               0x1fff2fdc     0x4  Data  Gb  schedule.o [1]
+g_speed_integral        0x1fff2fd4     0x4  Data  Gb  schedule.o [1]
+g_speed_num             0x1fff0464     0x2  Data  Gb  schedule.o [1]
+g_speed_p               0x1fff2fd8     0x4  Data  Gb  schedule.o [1]
+g_stand_d               0x1fff2fd0     0x4  Data  Gb  schedule.o [1]
+g_stand_p               0x1fff2fcc     0x4  Data  Gb  schedule.o [1]
+g_time                  0x1fff3078     0x2  Data  Gb  schedule.o [1]
+gpio_init               0x000051bd   0x208  Code  Gb  gpio.o [1]
+gyo1                    0x1fff3044     0xc  Data  Gb  sensoroperation.o [1]
+gyo2                    0x1fff3050     0xc  Data  Gb  sensoroperation.o [1]
+href_isr                0x00000521   0x15e  Code  Gb  schedule.o [1]
+img_Cnt                 0x1fff05a4     0x4  Data  Gb  schedule.o [1]
+interrupt_init          0x00001789    0x76  Code  Gb  interrupt.o [1]
+is_Sp                   0x1fff2fbc     0x4  Data  Gb  schedule.o [1]
+m                       0x1fff306c     0x4  Data  Gb  vectors.o [1]
+main                    0x00005a01    0x14  Code  Gb  main.o [1]
+memcpy                  0x00003a35     0xc  Code  Gb  memcpy.o [3]
+mt9v022_init            0x000047ad    0xd8  Code  Gb  sccb.o [1]
+p                       0x1fff059c     0x4  Data  Gb  schedule.o [1]
+periph_clk_khz          0x1fff0558     0x4  Data  Gb  clkinit.o [1]
+periph_clk_mhz          0x1fff055c     0x4  Data  Gb  clkinit.o [1]
+pit0_isr                0x00000efb    0xb8  Code  Gb  schedule.o [1]
+pll_init                0x000053cd   0x196  Code  Gb  mcg.o [1]
+sccb_init               0x0000473d    0x70  Code  Gb  sccb.o [1]
+sccb_write              0x00004bc9    0xc6  Code  Gb  sccb.o [1]
+set_irq_priority        0x000019c5    0x1c  Code  Gb  interrupt.o [1]
+set_sys_dividers        0x1fff0411    0x4c  Code  Gb  mcg.o [1]
+sinf                    0x0000396b     0x6  Code  Gb  sinf.o [4]
+speed                   0x1fff2fe0     0x4  Data  Gb  schedule.o [1]
+speed_feedback          0x1fff2fe4     0x4  Data  Gb  schedule.o [1]
+speed_feedback_pre      0x1fff2fe8     0x4  Data  Gb  schedule.o [1]
+sqrtf                   0x0000374d          Code  Gb  sqrtf.o [4]
+start                   0x000058a9    0x14  Code  Gb  start.o [1]
+startSCCB               0x00004885    0xea  Code  Gb  sccb.o [1]
+stopSCCB                0x0000496f    0xb0  Code  Gb  sccb.o [1]
+system_init             0x000055bd   0x12c  Code  Gb  systeminit.o [1]
+timer_init              0x000056e9    0x94  Code  Gb  timer.o [1]
+trace_clk_init          0x00005563    0x16  Code  Gb  mcg.o [1]
+uart_init               0x000019e1   0x18c  Code  Gb  uart.o [1]
+uart_putchar            0x00001b6d     0xe  Code  Gb  uart.o [1]
+uart_putvec             0x00001b7b    0x1c  Code  Gb  uart.o [1]
+uart_test               0x00001315    0x78  Code  Gb  schedule.o [1]
+video_ori               0x1fff097c  0x25f8  Data  Gb  schedule.o [1]
+vsync_isr               0x000004c5    0x5a  Code  Gb  schedule.o [1]
+wdog_disable            0x00005959    0x16  Code  Gb  wdog.o [1]
+wdog_unlock             0x00005971    0x16  Code  Gb  wdog.o [1]
+write_vtor              0x00005a15     0x6  Code  Gb  core.o [1]
+
+
+[1] = C:\Users\hasee\Desktop\scar\f1\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  20 900 bytes of readonly  code memory
+      76 bytes of readwrite code memory
+   2 460 bytes of readonly  data memory
+  11 313 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
